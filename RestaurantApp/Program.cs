@@ -19,6 +19,10 @@ namespace RestaurantApp
                 new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7)
             };
 
+            foreach (var item in restaurants)
+            {
+                Console.WriteLine($"{item.Name} Type:{item.Type} -- {item.Rate}");
+            }
         }
     }
     public class Restaurant
@@ -30,7 +34,10 @@ namespace RestaurantApp
 
         public Restaurant(int id,string name,string type,double rate)
         {
-
+            this.Id = id;
+            this.Name = name;
+            this.Type = type;
+            this.Rate = rate;
         }
     }
 }
