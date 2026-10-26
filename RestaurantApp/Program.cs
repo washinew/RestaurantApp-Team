@@ -23,6 +23,7 @@ namespace RestaurantApp
             {
                 Console.WriteLine($"{item.Name} Type:{item.Type} -- {item.Rate}");
             }
+            Console.WriteLine("Yaso");
         }
     }
     public class Restaurant
